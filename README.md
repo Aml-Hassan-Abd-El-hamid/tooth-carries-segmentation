@@ -1,4 +1,4 @@
-# Tooth Carries Segmentation
+# Tooth Caries Segmentation
 
 ## What's this repo about:
 
@@ -19,6 +19,7 @@ I was provided with exactly 6 images, 3 were teeth with no pounding boxes and 3 
 
 ## How I did the task:
 
-Given the amount of data that I was provided with, the lack of time and resources to collect more data, and the lack of proper computational power, the first method that encountered my mind to finish such a task was to use a strong model that's already trained and ready to go.<br>
-I chose to go with **Yolov8** given the fact that I already used it in similar tasks before and it's also open source and easy for use and setup.<br>
+I first started by defining the kind of task and what kind of image segmentation task it is. I framed this task as a semantic segmentation which is a computer vision task in which the goal is to categorize each pixel in an image into a class or object. Here we have 2 classes: background and Caries.
+
+Given the amount of data that I was provided with, the lack of time and resources to collect more data, and the lack of proper computational power, the first method that came to my mind to finish such a task was to use a strong model that's already trained and ready to go.<br>
 
