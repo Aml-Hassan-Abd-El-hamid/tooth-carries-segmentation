@@ -21,5 +21,17 @@ I was provided with exactly 6 images, 3 were teeth with no pounding boxes and 3 
 
 I first started by defining the kind of task and what kind of image segmentation task it is. I framed this task as a semantic segmentation which is a computer vision task in which the goal is to categorize each pixel in an image into a class or object. Here we have 2 classes: background and Caries.
 
-Given the amount of data that I was provided with, the lack of time and resources to collect more data, and the lack of proper computational power, the first method that came to my mind to finish such a task was to use a strong model that's already trained and ready to go.<br>
+Given the amount of data that I was provided with, the lack of time and resources to collect more data, and the lack of proper computational power, the first method that came to my mind to finish such a task was to use a strong model that's already trained and ready to go.<be>
+
+I experimented with multiple models but the 2 models that gave the best results were the following ones:
+
+
+**caries-detection-euzne from Roboflow**: Roboflow has amazing pre-trained models there, those models are trained on a variety of tasks, and there were a lot of models trained to conduct segmentation on tooth caries, I experimented with some of them and picked the best possible one, here's a [link](https://universe.roboflow.com/digital-health-bg/caries-detection-euzne) to the model's page.<be>
+Of Course the model needed more training and fin-tuning to catch the caries from the images in a better way so I intend to collect more data to work with it in the future.
+
+**SAM**: According to META, SAM is a promotable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training, so of course I was tempted to try such a model on those images, but it's still didn't catch all the carries!
+
+You can see the results of the 2 models inside this [notebook](https://github.com/Aml-Hassan-Abd-El-hamid/tooth-carries-segmentation/blob/main/tooth-caries-segmentation.ipynb).
+
+
 
